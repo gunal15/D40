@@ -22,8 +22,8 @@ for( var n in arr){
 
 //2.Create your own resume data in JSON format:
 
-var myResume={
-    "basics": [{
+var myResume=[{
+    "basics": {
       "name": "GUNAL N",
       "email": "gunalnandakumar@gamil.com",
       "phone": "9849294878",
@@ -40,9 +40,9 @@ var myResume={
           "github":"https://github.com/gunal15"
         }
     
-    }],
+    },
     
-    "education": [
+    "education": 
       {
         "institution": "JEPPIAAR MAAMALLAN ENGINEERING COLLEGE",
         "department": "CIVIL ENGINEERING",
@@ -51,22 +51,27 @@ var myResume={
         "batch end year": 2020,
         "gpa": 6.34,
       }
-    ],
-    "skills": [
+    ,
+    "skills": 
       {
         "name": "C,javascript",
         "level": "beginner",
         
       }
-    ],
-    "languages": [
+    ,
+    "languages": 
       {
         "language": "Tamil,English",
       }
-    ],
+    ,
     
+  }]
+  for(var i=0;i<myResume.length;i++){
+    for(var key in myResume[i])
+    {
+  console.log(key,myResume[i][key]);
+    }
   }
-  console.log(myResume);
 
 //3.Read about the difference between Window,screen and document in JAVASCRIPT:
 
